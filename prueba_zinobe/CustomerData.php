@@ -166,7 +166,7 @@ swal({
   closeOnConfirm: true
 },
 function(){
-  window.location='crear_empresas.php';
+  window.location='crear_cliente.php';
 });
 
 
