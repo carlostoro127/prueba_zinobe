@@ -193,7 +193,7 @@ echo"
 
 <form style='font-family:arial,helvetica,sans-serif;' class='formoid-solid-dark' style='background-color:#F2F4F6;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px' action='CustomerData.php' method='post'><div class='title'><h2>Formulario de registro usuarios</h2></div>
 	<div class='element-input' title='Nombres y apellidos'><label class='title'></label><div class='item-cont'><input title='Digite el nombre completo' maxlength='50' minlength='3' class='large' type='text' name='nombre' placeholder='Nombre completo' required /><span class='icon-place'></span></div></div>
-	<div class='element-number' title='documento'><label class='title'></label><div class='item-cont'><input  class='large' type='number' name='documento' placeholder='Numero de documento' maxLength='20' required /><span class='icon-place'></span></div></div>
+	<div class='element-number' title='documento'><label class='title'></label><div class='item-cont'><input  class='large' type='number' name='documento' placeholder='Numero de documento' oninput='javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);' maxLength='20' required /><span class='icon-place'></span></div></div>
 <div id='result-username'></div>
 <div class='element-email' title='email'><label class='title'></label><div class='item-cont'><input class='large' type='email' name='email' placeholder='email electronico' maxLength='90' required /><span class='icon-place'></span></div></div>
 
